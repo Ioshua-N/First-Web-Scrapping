@@ -5,9 +5,7 @@ from bs4 import BeautifulSoup
 # get the URL from the page we're scraping
 url = "https://www.imdb.com/chart/moviemeter/?ref_=nv_mv_mpm&sort=user_rating%2Cdesc"
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
-}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'}
 
 # send a get request to the URL
 urlResponse = requests.get(url, headers=headers)
